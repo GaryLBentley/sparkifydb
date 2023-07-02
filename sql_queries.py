@@ -53,7 +53,6 @@ time_table_create = ("CREATE TABLE IF NOT EXISTS time (\
 # INSERT RECORDS
 
 songplay_table_insert = ("INSERT INTO songplays (\
-                         songplay_id, \
                          start_time, \
                          user_id, \
                          level, \
