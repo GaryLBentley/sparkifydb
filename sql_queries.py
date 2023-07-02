@@ -43,10 +43,10 @@ artist_table_create = ("CREATE TABLE IF NOT EXISTS artists (\
 time_table_create = ("CREATE TABLE IF NOT EXISTS time (\
                      start_time timestamp PRIMARY KEY, \
                      hour int NOT NULL, \
-                     day int NOT NULL \
-                     week int NOT NULL \
-                     month int NOT NULL \
-                     year int NOT NULL \
+                     day int NOT NULL, \
+                     week int NOT NULL, \
+                     month int NOT NULL, \
+                     year int NOT NULL, \
                      weekday int NOT NULL) ;")
 
 # INSERT RECORDS
