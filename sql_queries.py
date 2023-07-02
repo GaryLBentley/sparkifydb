@@ -13,8 +13,8 @@ songplay_table_create = ("CREATE TABLE IF NOT EXISTS songplays (\
                          start_time timestamp NOT NULL, \
                          user_id int NOT NULL, \
                          level varchar NOT NULL, \
-                         song_id varchar NOT NULL, \
-                         artist_id varchar NOT NULL, \
+                         song_id varchar NULL, \
+                         artist_id varchar NULL, \
                          session_id int NOT NULL, \
                          location varchar NOT NULL, \
                          user_agent varchar NOT NULL) ;")
