@@ -7,7 +7,8 @@ artist_table_drop = "DROP TABLE IF EXISTS artists"
 time_table_drop = "DROP TABLE IF EXISTS time"
 
 # CREATE TABLES
-
+# https://www.geeksforgeeks.org/how-to-define-an-auto-increment-primary-key-in-postgresql-using-python/
+# songplay_id is not in our data files, so using serial to create an auto-increment PK
 songplay_table_create = ("CREATE TABLE IF NOT EXISTS songplays (\
                          songplay_id serial PRIMARY KEY, \
                          start_time timestamp NOT NULL, \
@@ -61,7 +62,7 @@ songplay_table_insert = ("INSERT INTO songplays (\
                          session_id, \
                          location, \
                          user_agent) \
-                         VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s) \
+                         VALUES (%s, %s, %s, %s, %s, %s, %s, %s) \
                          ON CONFLICT DO NOTHING;")
 
 user_table_insert = ("INSERT INTO users (\
