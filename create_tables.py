@@ -4,8 +4,13 @@ from sql_queries import create_table_queries, drop_table_queries
 
 def create_database():
     """
-    - Creates and connects to the sparkifydb
-    - Returns the connection and cursor to sparkifydb
+    - Connects to studentdb
+    - Drops sparkifydb if exists
+    - Creates sparkifydb
+    
+    Returns:
+        cur - cursor to sparkifydb
+        conn - connection to sparkifydb
     """
     
     # connect to default database
@@ -72,20 +77,39 @@ def create_database():
 def drop_tables(cur, conn):
     """
     Drops each table using the queries in `drop_table_queries` list.
+    Accepts:
+        cur - cursor to sparkifydb
+        conn - connection to sparkifydb
+    
+    Returns:
+        Nothing
     """
-    for query in drop_table_queries:
-        cur.execute(query)
-        conn.commit()
+    try:
+        for query in drop_table_queries:
+            cur.execute(query)
+            conn.commit()
+    except psycopg2.Error as e:
+        print("Error: Unable to drop tables - sparkifydb")
+        print(e)
 
 
 def create_tables(cur, conn):
     """
     Creates each table using the queries in `create_table_queries` list. 
+    Accepts:
+        cur - cursor to sparkifydb
+        conn - connection to sparkifydb
+    
+    Returns:
+        Nothing
     """
-    for query in create_table_queries:
-        cur.execute(query)
-        conn.commit()
-
+    try:
+        for query in create_table_queries:
+            cur.execute(query)
+            conn.commit()
+    except psycopg2.Error as e:
+        print("Error: Unable to create tables - sparkifydb")
+        print(e)
 
 def main():
     """
