@@ -1,0 +1,72 @@
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+brotlipy==0.7.0
+certifi==2021.5.30
+cffi @ file:///C:/ci/cffi_1625831763871/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+colorama==0.4.5
+cryptography @ file:///C:/ci/cryptography_1635366724772/work
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+entrypoints==0.3
+greenlet @ file:///C:/ci/greenlet_1628888263395/work
+html2text==2020.1.16
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata @ file:///C:/ci/importlib-metadata_1631916885413/work
+ipykernel @ file:///C:/ci/ipykernel_1596206775157/work/dist/ipykernel-5.3.4-py3-none-any.whl
+ipython==7.16.3
+ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+ipython-sql==0.4.1
+jedi==0.17.2
+jupyter-client @ file:///opt/conda/conda-bld/jupyter_client_1643638337975/work
+jupyter-core @ file:///C:/ci/jupyter_core_1633402348205/work
+kiwisolver @ file:///C:/ci/kiwisolver_1612282446297/work
+lxml==4.9.2
+matplotlib @ file:///C:/ci/matplotlib-suite_1613408055530/work
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1613680548246/work
+numpy @ file:///C:/ci/numpy_and_numpy_base_1603480701039/work
+oauthlib==3.2.2
+olefile==0.46
+packaging==21.3
+pandas @ file:///C:/ci/pandas_1608056614942/work
+parso==0.7.1
+patsy==0.5.1
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow @ file:///C:/ci/pillow_1625663293114/work
+prettytable==0.7.2
+prompt-toolkit==3.0.36
+psycopg2 @ file:///C:/ci/psycopg2_1612298619396/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pycurl==7.43.0.5
+Pygments==2.14.0
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
+PySocks @ file:///C:/ci/pysocks_1605305839978/work
+python-certifi-win32==1.6.1
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz==2021.3
+pywin32==228
+pyzmq @ file:///C:/ci/pyzmq_1628276569449/work
+requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
+requests-oauthlib==1.3.1
+scipy @ file:///C:/ci/scipy_1597675683670/work
+seaborn @ file:///tmp/build/80754af9/seaborn_1629307859561/work
+setuptools-scm==6.4.2
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+SQLAlchemy @ file:///C:/ci/sqlalchemy_1626948547082/work
+sqlparse==0.4.4
+statsmodels==0.12.2
+tomli==1.2.3
+tornado @ file:///C:/ci/tornado_1606942379977/work
+traitlets @ file:///C:/ci/traitlets_1632759765830/work
+tweepy==4.6.0
+typing_extensions @ file:///opt/conda/conda-bld/typing_extensions_1647553014482/work
+urllib3 @ file:///opt/conda/conda-bld/urllib3_1643638302206/work
+wcwidth==0.2.6
+win-inet-pton @ file:///C:/ci/win_inet_pton_1605306197271/work
+wincertstore==0.2
+wptools==0.4.17
+wrapt==1.15.0
+zipp @ file:///tmp/build/80754af9/zipp_1633618647012/work
