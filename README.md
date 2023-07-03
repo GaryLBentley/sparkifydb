@@ -34,3 +34,8 @@ The below Entity Relationship Diagram was generated in pgAdmin4 and is included 
 ## ETL Pipeline
 
 To create the ETL process, the etl.ipynb (Jupyter Notebook) was written and tested so results could be visualized. When all test code had been executed, the test.ipynb notebook was ran to validate that all tables had data. Finally, code in the etl.py file is executed to populate the tables from the data contained in the JSON files. A final run of test.ipynb confirmed that all tables were populated with data. 
+
+To run the ETL process, execute the following queries in the order specified:
+1. Run create_tables.py
+2. Run etl.py
+3. Run test.ipynb (to validate results)
