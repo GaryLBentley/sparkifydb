@@ -6,6 +6,16 @@ from sql_queries import *
 
 
 def process_song_file(cur, filepath):
+    """
+    Reads record from JSON file and inserts data into the song_data table and artist_data table 
+    Parameters:
+        cur: cursor to sparkifydb
+        filepath: filepath to JSON file
+    
+    Returns:
+        Nothing
+    """
+
     # open song file
     df = pd.read_json(filepath, lines=True)
 
@@ -19,6 +29,17 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    """
+    Reads log record from JSON file and converts timestamp into DT variables. Records are loaded
+    into users and songplays tables
+    Parameters:
+        cur: cursor to sparkifydb
+        conn: connection to sparkifydb
+    
+    Returns:
+        Nothing
+    """
+
     # open log file
     df = pd.read_json(filepath, lines=True)
 
@@ -61,6 +82,17 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
+    """
+    Creates each table using the queries in `create_table_queries` list. 
+    Parameters:
+        cur: cursor to sparkifydb
+        conn: connection to sparkifydb
+        filepath: filepath to JSON file
+        func: Name of function to execute
+    Returns:
+        Nothing
+    """
+
     # get all files matching extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):
