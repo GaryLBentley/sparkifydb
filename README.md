@@ -29,10 +29,8 @@ Temporary dataframes were utilized to import sample data from the JSON files in 
 
 The below Entity Relationship Diagram was generated in pgAdmin4 and is included in the sparkifydb_erd.png file.
 
-<center><img src="sparkifydb_erd.png" alt="ERD Diagram"/></center>
+<img src="sparkifydb_erd.png" alt="ERD Diagram"/>
 
 ## ETL Pipeline
 
 To create the ETL process, the etl.ipynb (Jupyter Notebook) was written and tested so results could be visualized. When all test code had been executed, the test.ipynb notebook was ran to validate that all tables had data. Finally, code in the etl.py file is executed to populate the tables from the data contained in the JSON files. A final run of test.ipynb confirmed that all tables were populated with data. 
-
-## Query Examples
