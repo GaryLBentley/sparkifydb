@@ -77,9 +77,9 @@ def create_database():
 def drop_tables(cur, conn):
     """
     Drops each table using the queries in `drop_table_queries` list.
-    Accepts:
-        cur - cursor to sparkifydb
-        conn - connection to sparkifydb
+    Parameters:
+        cur: cursor to sparkifydb
+        conn: connection to sparkifydb
     
     Returns:
         Nothing
@@ -96,9 +96,9 @@ def drop_tables(cur, conn):
 def create_tables(cur, conn):
     """
     Creates each table using the queries in `create_table_queries` list. 
-    Accepts:
-        cur - cursor to sparkifydb
-        conn - connection to sparkifydb
+    Parameters:
+        cur: cursor to sparkifydb
+        conn: connection to sparkifydb
     
     Returns:
         Nothing
